@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Арсений Липин](https://up.htmlacademy.ru/htmlcss/33/user/347745).
-* Наставник: `Евгений Соломеин`.https://htmlacademy.ru/profile/id164065
+* Наставник: [Евгений Соломеин](https://htmlacademy.ru/profile/id164065).
 
 ---
 
