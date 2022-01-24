@@ -7,39 +7,47 @@
   <body>
     <header class="page-header">
       <img class="logo" src="#" alt="Логотип Девайс">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="search-input" type="text" name="search" placeholder="Текст поиска">
+        <button class="search-button" type="submit">Найти</button>
+      </form>
       <ul class="menu-list">
-        <li class="menu-item"><a href="#">Сравнить</a></li>
-        <li class="menu-item"><a href="#">Корзина</a></li>
+        <li class="menu-item">
+          <a href="#">Сравнить</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+      <a class="menu-item-link" href="#">Войти</a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#">каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">контакты</a>
+          </li>
         </ul>
-        <a class="menu-item-link" href="#">Войти</a>
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <span class="search-text">
-          <input type="text" name="search" placeholder="Текст поиска">
-          </span>
-          <button class="search-button" type="submit">Найти</button>
-        </form>
-        <nav class="navigation">
-        <div class="navigation-products">
-          <a class="navigation-products-link" href="#">каталог товаров</a>
-        </div>
-          <ul class="navigation-list">
-            <li class="navigation-item"><a href="#">доставка</a></li>
-            <li class="navigation-item"><a href="#">гарантия</a></li>
-            <li class="navigation-item"><a href="#">контакты</a></li>
-          </ul>
-        </nav>
-    </header>
+      </nav>
+  </header>
     <main class="main-index">
       <h1 class="visually-hidden">Магазин "Девайс"</h1>
       <section class="slider">
-        <h2 class="visually-hidden">слайдер квадрокоптера</h2>
+        <p class="visually-hidden">слайдер квадрокоптера</p>
         <ul>
-        <li><img class="slider-image" src="#" alt="пример товара">
-        <h3 class="slider-title">Порхает как бабочка,
+         <li>
+          <img class="slider-image" src="#" alt="пример товара">
+          <h3 class="slider-title">Порхает как бабочка,
           жалит как пчела!</h3>
-          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <button class="slider-button" type="button">
+          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <button class="slider-button" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="slider-button" type="button">
@@ -65,17 +73,19 @@
         <div class="rectangle">
           <a class="rectangle-link" href="#">подробнее</a>
         </div>
-        <ul class="specifications-list">
-          <li class="specifications-item"><b class="distance">800 м</b> <span class="action">Дальность полета</span></li>
-          <li class="specifications-item"><b class="distance">50 м</b> <span class="action">Радиус поражения</span></li>
-        </ul>
+        <dl class="specifications-list">
+          <dt class="action">Дальность полета</dt>
+           <dd class="distance">800 м</dd> 
+          <dt class="action">Радиус поражения</dt>
+           <dd class="distance">50 м</dd>
+        </dl>
         </li>
-        <li><img class="slider-image" src="#" alt="пример товара">
-        <h3 class="slider-title">Порхает как бабочка,
+        <li>
+          <img class="slider-image" src="#" alt="пример товара">
+          <h3 class="slider-title">Порхает как бабочка,
           жалит как пчела!</h3>
-          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <button class="slider-button" type="button">
+          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <button class="slider-button" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="slider-button" type="button">
@@ -103,17 +113,23 @@
         </div>
        <div class="specifications">
        <ul class="specifications__list">
-          <li class="specifications__item"><b class="distance">800 м</b> <span class="action">Дальность полета</span></li>
-          <li class="specifications__item"><b class="distance">50 м</b> <span class="action">Радиус поражения</span></li>
+          <li class="specifications__item">
+            <b class="distance">800 м</b> 
+            <span class="action">Дальность полета</span>
+          </li>
+          <li class="specifications__item">
+            <b class="distance">50 м</b> 
+            <span class="action">Радиус поражения</span>
+          </li>
         </ul>
        </div> 
        </li>
-        <li><img class="slider-image" src="#" alt="пример товара">
-        <h3 class="slider-title">Порхает как бабочка,
+        <li>
+          <img class="slider-image" src="#" alt="пример товара">
+          <h3 class="slider-title">Порхает как бабочка,
           жалит как пчела!</h3>
-          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <button class="slider-button" type="button">
+          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <button class="slider-button" type="button">
           <span class="visually-hidden">Предыдущее фото</span>
         </button>
         <button class="slider-button" type="button">
@@ -140,38 +156,43 @@
           <a class="rectangle-link" href="#">подробнее</a>
         </div>
         <ul class="specifications-list">
-          <li class="specifications-item"><b class="distance">800 м</b> <span class="action">Дальность полета</span></li>
-          <li class="specifications-item"><b class="distance">50 м</b> <span class="action">Радиус поражения</span></li>
-        </ul></li>
+          <li class="specifications-item">
+            <b class="distance">800 м</b> 
+            <span class="action">Дальность полета</span>
+          </li>
+          <li class="specifications-item">
+            <b class="distance">50 м</b>
+            <span class="action">Радиус поражения</span>
+          </li>
         </ul>
-        
-        
+      </li>
+        </ul>
       </section>
       <section class="categories">
          <h2 class="visually-hidden">категории товаров</h2>
          <ul class="categories-list">
-           <li class="categories-item">
-            <img class="categories-image" src="#" alt="">
+          <li class="categories-item">
+             <img class="categories-image" src="#" alt="">
              <p class="categories-text">Виртуальная реальность</p>
            </li>
            <li class="categories-item">
-            <img class="categories-image" src="#" alt="">
+             <img class="categories-image" src="#" alt="">
              <p class="categories-text">Моноподы для селфи</p>
            </li>
            <li class="categories-item">
-            <img class="categories-image" src="#" alt="">
+             <img class="categories-image" src="#" alt="">
              <p class="categories-text">Экшн-камеры</p>
            </li>
            <li class="categories-item">
-            <img class="categories-image" src="#" alt="">
+             <img class="categories-image" src="#" alt="">
              <p class="categories-text">Фитнес-браслеты</p>
            </li>
            <li class="categories-item">
-            <img class="categories-image" src="#" alt="">
+             <img class="categories-image" src="#" alt="">
              <p class="categories-text">Умные часы</p>
            </li>
            <li class="categories-item">
-            <img class="categories-image" src="#" alt="">
+             <img class="categories-image" src="#" alt="">
              <p class="categories-text">Квадрокоптеры</p>
            </li>
          </ul>
@@ -179,9 +200,15 @@
       <section class="conditions">
         <h2 class="visually-hidden">условия</h2>
         <ol class="conditions-nav-list">
-          <li class="conditions-nav-item"><a class="rectangle-link" href="#tab_01">Доставка</a></li>
-          <li class="conditions-nav-item"><a class="rectangle-link" href="#tab_02">Гарантия</a></li>
-          <li class="conditions-nav-item"><a class="rectangle-link" href="#tab_03">Кредит</a></li>
+          <li class="conditions-nav-item">
+            <a class="rectangle-link" href="#tab_01">Доставка</a>
+          </li>
+          <li class="conditions-nav-item">
+            <a class="rectangle-link" href="#tab_02">Гарантия</a>
+          </li>
+          <li class="conditions-nav-item">
+            <a class="rectangle-link" href="#tab_03">Кредит</a>
+          </li>
         </ol>
         <ul class="conditions-description-list">
           <li class="description-item" id="#tab_01">
@@ -205,7 +232,7 @@
       </section>
       <div class="delivery">
         <p class="delivery-text">Доставим редкий товар под заказ</p>
-        <img class="delivery-image" src="" alt="">
+        <img class="delivery-image" src="#" alt="">
       </div>
       <section class="about">
         <h2 class="about-title">О нас</h2>
@@ -300,6 +327,5 @@
           <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
         </section>
       </footer>
-    
-  </body>
+    </body>
 </html>
