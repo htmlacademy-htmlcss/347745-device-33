@@ -14,8 +14,10 @@
     </a>
       <div class="search-menu">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="search">
             <input class="search-input" type="text" name="search" placeholder="Текст поиска">
             <button class="search-button" type="submit">Найти</button>
+          </label>
           </form>
         <ul class="menu-list">
           <li class="menu-item">
@@ -72,32 +74,37 @@
                         <ul class="filter-list">
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="black" checked>
-                                    Черный
+                                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Черный</span>
                                 </label>
                             </li>
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="white" checked>
-                                    Белый
+                                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Белый</span>
                                 </label>
                             </li>
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="blue" >
-                                    Синий
+                                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Синий</span>
                                 </label>
                             </li>
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="red" >
-                                    Красный
+                                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Красный</span>
                                 </label>
                             </li>
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="checkbox" name="pink" >
-                                    Розовый
+                                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Розовый</span>
                                 </label>
                             </li>
                         </ul>
@@ -107,19 +114,21 @@
                         <ul class="filter-list">
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="radio" name="product-group" value="yes" checked>
-                                    Есть
+                                    <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Есть</span>
                                 </label>  
                             </li>
                             <li class="filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="radio" name="product-group" value="no">
-                                    Нет
+                                    <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
+                                    <span class="control-mark"></span>
+                                    <span class="control-input-text">Нет</span>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <div class="rectangle-button">
+                    <div class="rectangle-button ">
                       <button class="filter-button rectangle-link" type="submit">Показать</button>
                    </div>
                 </form>
@@ -157,7 +166,9 @@
                                 селфи-палка</h3>
                               <span class="product-card-price">500 ₽</span>
                           </div>
+                         
                         </a>
+                        
                       </li>
                       <li class="product-card-item">
                         <a class="product-card-link" href="product.html">

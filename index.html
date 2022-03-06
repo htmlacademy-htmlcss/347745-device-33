@@ -12,9 +12,11 @@
       </a>
         <div class="search-menu">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="search">
               <input class="search-input" type="text" name="search" placeholder="Текст поиска">
               <button class="search-button" type="submit">Найти</button>
-            </form>
+            </label>
+          </form>
           <ul class="menu-list">
             <li class="menu-item">
               <a class="menu-item-link  login" href="#">Войти</a>
@@ -47,8 +49,7 @@
     <main class="main-index">
       <h1 class="visually-hidden">Магазин "Девайс"</h1>
       <section class="slider container">
-        
-       <ul class="slider-list">
+        <ul class="slider-list">
         <li class="slider-item">
           <div class="number">
             <p class="number-inner">01</p>
@@ -70,15 +71,15 @@
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="slider-button-wrapper">
                 <div class="button-pagination-wrapper">
-                <button class="slider-button" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
+                <!-- <button class="slider-button" type="button">
+                  <span class="visually-hidden prev-button">Предыдущее фото</span>
                 </button>
                 <button class="slider-button" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
-                </button>
+                  <span class="visually-hidden next-button">Следующее фото</span>
+                </button> -->
                 <ol class="slider-pagination-list">
                   <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
+                    <button class="slider-pagination-button button-black" type="button">
                       <span class="visually-hidden">1 фото</span>
                     </button>
                   </li>
@@ -94,17 +95,16 @@
                   </li>
                 </ol>
               </div>
-                <div class="rectangle-button">
-                    <a class="rectangle-link" href="#">подробнее</a>
-                </div>
-             </div>
-            <dl class="specifications-list">
-              <dt class="action">Дальность полета</dt>
-              <dd class="distance">800 м</dd> 
-              <dt class="action">Радиус поражения</dt>
-              <dd class="distance">50 м</dd>
-            </dl>
-        </div>
+                  <div class="rectangle-button">
+                        <a class="rectangle-link" href="#">подробнее</a>
+                  </div>
+                <dl class="specifications-list">
+                  <dt class="action">Дальность полета</dt>
+                  <dd class="distance">800 м</dd> 
+                  <dt class="action">Радиус поражения</dt>
+                  <dd class="distance">50 м</dd>
+                </dl>
+         </div>
       </div>
     </div>
         </li>
@@ -249,17 +249,17 @@
           <h2 class="visually-hidden">условия</h2>
           <ol class="conditions-nav-list">
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link" href="#tab_01"><span class="conditions-text">Доставка</span></a>
+              <a class="rectangle-link" href="#tab_01" id="tab-1"><span class="conditions-text">Доставка</span></a>
             </li>
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link" href="#tab_02">Гарантия</a>
+              <a class="rectangle-link" href="#tab_02" id="tab-2">Гарантия</a>
             </li>
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link" href="#tab_03">Кредит</a>
+              <a class="rectangle-link" href="#tab_03" id="tab-3">Кредит</a>
             </li>
           </ol>
           <ul class="conditions-description-list background">
-            <li class="description-item" id="tab_01">
+            <li class="description-item" id="tab_01" aria-labelledby="tab-1">
               <div class="description-text-wrapper">
                   <h3 class="description-title title">Доставка</h3>
                   <p class="description-text">Мы с удовольствием доставим ваш товар прямо
@@ -270,7 +270,7 @@
                 <img class="description-image" src="images/tabs/tab-image.svg" width="136" height="164" alt="почтальон несет посылку">
               </div>
             </li>
-            <li class="description-item" id="tab_02">
+            <li class="description-item" id="tab_02" aria-labelledby="tab-2">
               <div class="description-text-wrapper">
                   <h3 class="description-title title">Гарантия</h3>
                   <p class="description-text">Если из-за возгорания купленного у нас товара у вас
@@ -281,7 +281,7 @@
                 <img class="description-image" src="images/tabs/tab-image2.svg" width="171" height="195" alt="телефоная тубка, гаечный ключ и отвертка">
               </div>
             </li>
-              <li class="description-item" id="tab_03">
+              <li class="description-item" id="tab_03" aria-labelledby="tab-3">
                 <div class="description-text-wrapper">
                     <h3 class="description-title title">Кредит</h3>
                     <p class="description-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
@@ -329,9 +329,9 @@
               <li class="contacts-item">пн—пт: с 10:00 до 22:00</li>
               <li class="contacts-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <div class="rectangle-button ">
+            <div class="rectangle-button">
               <a class="rectangle-link" href="#">Напишите нам</a>
-      </div>
+            </div>
       </section>
     </div>
       <section class="subscribe background">
@@ -343,7 +343,7 @@
           </div>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe-mail">
-              <input type="text" name="e-mail" placeholder="Ваш e-mail">
+              <input class="subscribe-field" type="text" name="e-mail" placeholder="Ваш e-mail">
               <button class="subscribe-button" type="submit">Подписаться</button>
              </label>
               <p class="subscribe-form-text">Это бесплатно</p>
