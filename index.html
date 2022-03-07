@@ -14,7 +14,7 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="search">
               <input class="search-input" type="text" name="search" placeholder="Текст поиска">
-              <button class="search-button" type="submit">Найти</button>
+              <button class="search-button" type="submit"><span class="search-button-text">Найти</span></button>
             </label>
           </form>
           <ul class="menu-list">
@@ -33,6 +33,20 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-item-link" href="#">каталог товаров</a>
+              <div class="navigation-inner-wrapper container">
+                <ul class="navigation-list-inner">
+                  <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Виртуальная реальность</a></li>
+                  <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Моноподы для селфи</a></li>
+                  <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="navigation-list-inner">
+                  <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Фитнес-браслеты</a></li>
+                  <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Умные часы</a></li>
+                </ul>
+                <ul class="navigation-list-inner">
+                  <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
             </li>
             <li class="navigation-item">
               <a class="navigation-item-link" href="#">доставка</a>
@@ -58,10 +72,10 @@
         <h2 class="visually-hidden">квадрокоптер</h2>
         <div class="image-wrapper">
           <div class="arrow-left">
-            <a class="arrow-link" href="#"></a>
+            <button class="arrow-link" type="button"></button>
           </div>
           <div class="arrow-right">
-            <a class="arrow-link" href="#"></a>
+            <button class="arrow-link" type="button"></button>
           </div>
           <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="квадракоптер с краным лазерным лучем">
         </div>
@@ -71,12 +85,6 @@
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="slider-button-wrapper">
                 <div class="button-pagination-wrapper">
-                <!-- <button class="slider-button" type="button">
-                  <span class="visually-hidden prev-button">Предыдущее фото</span>
-                </button>
-                <button class="slider-button" type="button">
-                  <span class="visually-hidden next-button">Следующее фото</span>
-                </button> -->
                 <ol class="slider-pagination-list">
                   <li class="slider-pagination-item">
                     <button class="slider-pagination-button button-black" type="button">
@@ -249,16 +257,16 @@
           <h2 class="visually-hidden">условия</h2>
           <ol class="conditions-nav-list">
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link" href="#tab_01" id="tab-1"><span class="conditions-text">Доставка</span></a>
+              <a class="conditions-nav-link" href="#tab_01" id="tab-1"><span class="conditions-text">Доставка</span></a>
             </li>
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link" href="#tab_02" id="tab-2">Гарантия</a>
+              <a class="rectangle-link conditions-nav-link" href="#tab_02" id="tab-2">Гарантия</a>
             </li>
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link" href="#tab_03" id="tab-3">Кредит</a>
+              <a class="rectangle-link conditions-nav-link" href="#tab_03" id="tab-3">Кредит</a>
             </li>
           </ol>
-          <ul class="conditions-description-list background">
+          <ul class="conditions-description-list ">
             <li class="description-item" id="tab_01" aria-labelledby="tab-1">
               <div class="description-text-wrapper">
                   <h3 class="description-title title">Доставка</h3>
@@ -270,7 +278,7 @@
                 <img class="description-image" src="images/tabs/tab-image.svg" width="136" height="164" alt="почтальон несет посылку">
               </div>
             </li>
-            <li class="description-item" id="tab_02" aria-labelledby="tab-2">
+            <!-- <li class="description-item" id="tab_02" aria-labelledby="tab-2">
               <div class="description-text-wrapper">
                   <h3 class="description-title title">Гарантия</h3>
                   <p class="description-text">Если из-за возгорания купленного у нас товара у вас
@@ -289,7 +297,7 @@
                 <div class="description-image-wrapper">
                   <img class="description-image" src="images/tabs/tab-image3.svg" width="148" height="180" alt="человек несет банковскую карту">
                 </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
