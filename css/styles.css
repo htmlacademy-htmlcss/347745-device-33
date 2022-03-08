@@ -186,7 +186,6 @@ body {
   border-radius: 0px 50px 50px 0px;
   border-left: 1px solid #000;
   cursor: pointer;
-  
 }
 .search-button:hover {
   background-color: #000000;
@@ -323,7 +322,7 @@ body {
   opacity: 0.3;
 }
 .navigation-link-inner:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 .navigation-inner-wrapper {
   background: #ffe17f;
@@ -339,7 +338,6 @@ body {
   display: none;
 }
 .navigation-item-link:first-child:hover + .navigation-inner-wrapper {
-  
   display: block;
 }
 
@@ -914,7 +912,7 @@ body {
   height: 2px;
   width: 200px;
   margin-bottom: 16px;
-  background: #DCDCDC;
+  background: #dcdcdc;
   border-radius: 2px;
 }
 .range-bar {
@@ -930,10 +928,9 @@ body {
   align-items: center;
 }
 .range-toggle {
-  
   width: 20px;
   height: 20px;
-  background: #EBEBEB;
+  background: #ebebeb;
   border: 2px solid #242424;
   border-radius: 50%;
   cursor: pointer;
@@ -943,15 +940,11 @@ body {
 }
 .range-toggle:active {
   border: 2px solid #000000;
-} 
-.range-toggle:focus {
-
 }
 .toggle-min {
   top: -8px;
   left: -30px;
 }
-
 .toggle-max {
   top: -9px;
   right: -40px;
@@ -973,7 +966,6 @@ body {
   appearance: textfield;
   overflow: auto;
 }
-
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1010,14 +1002,14 @@ body {
 }
 .control-mark {
   position: absolute;
-  border: 2px solid #CCCCCC;
+  border: 2px solid #cccccc;
   border-radius: 3px;
   width: 20px;
   height: 20px;
   left: 0px;
   bottom: 3px;
 }
-.control-input:checked + .control-mark{
+.control-input:checked + .control-mark {
   border: 2px solid #000000;
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1031,7 +1023,6 @@ body {
   position: absolute;
   top: 2px;
   left: 3px;
-  
 }
 .control-radio {
   border-radius: 50%;
@@ -1045,7 +1036,6 @@ body {
   position: absolute;
   top: 6px;
   left: 6px;
-  
 }
 .filter-button {
   position: relative;
@@ -1153,13 +1143,13 @@ body {
   outline: none;
 }
 .product-card-link:active .rectangle-link::before {
-  background: #FFC700;
+  background: #ffc700;
 }
 
 /* не работает фокус */
 
 .product-card-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
 }
 
 /* -------------------- */
@@ -1425,3 +1415,168 @@ body {
 .htmlacademy-link:focus {
   outline: 1px solid #af4fff;
 }
+
+/* Модальное окно */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.modal {
+  margin: auto;
+  padding-top: 72px;
+  padding-right: 80px;
+  padding-bottom: 72px;
+  padding-left: 80px;
+  width: 920px;
+  height: 568px;
+  background: #ffffff;
+  border: 10px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 42px;
+}
+.close-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url(../images/modal/close-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
+  width: 26px;
+  height: 26px;
+  transform: translate(0, 14px);
+  cursor: pointer;
+}
+.close-button:hover {
+  opacity: 0.6;
+}
+.close-button:active {
+  opacity: 0.3;
+}
+.close-button:focus {
+  outline: 2px solid #af4fff;
+}
+.form-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.sup-title {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.sub-title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: normal;
+}
+.form-input {
+  padding: 20px;
+  color: #000000;
+  opacity: 0.3;
+}
+.form-input:focus {
+  outline: 2px solid #af4fff;
+  opacity: 1;
+}
+.width-name {
+  width: 360px;
+  box-sizing: border-box;
+  padding-right: 60px;
+}
+.img-name {
+  background-image: url(../images/modal/name.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 12px;
+  background-position: center right 24px;
+}
+.img-email {
+  background-image: url(../images/modal/email.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 12px;
+  background-position: center right 24px;
+}
+.modal-need {
+  width: 540px;
+  box-sizing: border-box;
+}
+.modal-number {
+  box-sizing: border-box;
+  width: 180px;
+  padding: 20px 80px;
+}
+.form-number {
+  position: relative;
+}
+.modal-number-button {
+  background-color: #ffffff;
+  border: none;
+  padding: 0;
+  width: 60px;
+  height: 56px;
+}
+.plus {
+  background-image: url(../images/modal/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  position: absolute;
+  right: 1px;
+  top: 35px;
+}
+.minus {
+  background-image: url(../images/modal/minus.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+
+  position: absolute;
+  left: 1px;
+  top: 35px;
+}
+.modal-button {
+  position: relative;
+  left: 30px;
+  z-index: 2;
+  cursor: pointer;
+}
+.modal-link {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.modal-link::before {
+  position: absolute;
+  left: -30px;
+  top: 6px;
+  width: 200px;
+}
+/* .modal-button:focus::before {
+  top: 12px;
+} */
