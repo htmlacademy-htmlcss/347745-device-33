@@ -71,6 +71,31 @@
                 <h3 class="filter-title">фильтр:</h3>
                 <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="filter-group">
+                      <legend class="filter-choice">Стоимость</legend>
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar">
+                            <div class="range-toggle-wrapper toggle-min">
+                              
+                            <button class="range-toggle"><span class="visually-hidden">Изменить минимальную цену</span>
+                            </button>
+                            <label class="catalog-filter-label">
+                              от <input class="range-input" type="number" value="0" name="min-price"> 
+                            </label>
+                          </div>
+                          <div class="range-toggle-wrapper toggle-max">
+                            <button class="range-toggle"><span class="visually-hidden">Изменить максимальную цену</span>
+                            </button>
+                            <label class="catalog-filter-label">
+                            до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                            </label>
+                          </div>
+                         </div>
+                        </div>
+                        
+                      </div>
+                    </fieldset>
+                    <fieldset class="filter-group">
                         <legend class="filter-choice">Цвет</legend>
                         <ul class="filter-list">
                             <li class="filter-item">
@@ -116,14 +141,14 @@
                             <li class="filter-item">
                                 <label class="control">
                                     <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
-                                    <span class="control-mark"></span>
+                                    <span class="control-mark control-radio"></span>
                                     <span class="control-input-text">Есть</span>
                                 </label>  
                             </li>
                             <li class="filter-item">
                                 <label class="control">
                                     <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
-                                    <span class="control-mark"></span>
+                                    <span class="control-mark control-radio"></span>
                                     <span class="control-input-text">Нет</span>
                                 </label>
                             </li>
@@ -167,7 +192,9 @@
                                 селфи-палка</h3>
                               <span class="product-card-price">500 ₽</span>
                           </div>
-                         
+                          <div class="rectangle-button ">
+                            <button class="product-card-button rectangle-link" type="submit">Подробнее</button>
+                         </div>
                         </a>
                         
                       </li>
@@ -178,6 +205,9 @@
                               <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                               <span class="product-card-price">1 500 ₽</span>
                           </div>
+                          <div class="rectangle-button ">
+                            <button class="product-card-button rectangle-link" type="submit">Подробнее</button>
+                         </div>
                         </a>
                       </li>
                       <li class="product-card-item">
@@ -188,6 +218,9 @@
                                   селфи-палка</h3>
                               <span class="product-card-price">2 500 ₽</span>
                           </div>
+                          <div class="rectangle-button ">
+                            <button class="product-card-button rectangle-link" type="submit">Подробнее</button>
+                         </div>
                         </a>
                       </li>
                       <li class="product-card-item">
@@ -197,6 +230,9 @@
                               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                               <span class="product-card-price">1 500 ₽</span>
                           </div>
+                          <div class="rectangle-button ">
+                            <button class="product-card-button rectangle-link" type="submit">Подробнее</button>
+                         </div>
                         </a>
                       </li>
                   </ul>
