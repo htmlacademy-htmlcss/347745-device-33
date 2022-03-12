@@ -450,16 +450,25 @@
                   <label class="form-group"><span class="sup-title">Что нужно привезти:</span>
                     <input class="form-input modal-need" type="text" name="bring" placeholder="В свободной форме">
                   </label>
-                  <label class="form-group form-number"><span class="sup-title">Количество:</span>
-                    <input class="form-input modal-number" type="text">
-                    <button class="minus modal-number-button">
-                    <span class="visually-hidden">Меньше</span>
-                    </button>
-                    <button class="plus modal-number-button">
-                      <span class="visually-hidden">Больше</span>
-                    </button>
-              
-                  </label>
+                  <span class="form-group">
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#FFE17F"/><path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000"/></svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям<br> 
+                        к провозу багажа.</span>
+                    </span>
+                    <label class="form-group form-number"><span class="sup-title">Количество:</span>
+                      <input class="form-input modal-number" type="text" placeholder="1">
+                      <button class="minus modal-number-button">
+                      <span class="visually-hidden">Меньше</span>
+                      </button>
+                      <button class="plus modal-number-button">
+                        <span class="visually-hidden">Больше</span>
+                      </button>
+                   </label>
+                   
+                 </span>
                </div>
                <div class="rectangle-button modal-button">
                  <button class="modal-link rectangle-link" type="button">Отправить</button>
