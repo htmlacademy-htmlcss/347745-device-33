@@ -35,6 +35,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding-top: 40px;
+  min-width: 1440px;
 }
 
 .background {
@@ -152,17 +153,28 @@ body {
 }
 .search {
   display: flex;
-  height: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+  background-image: url(../images/header/search.svg);
+  background-repeat: no-repeat;
+  background-position: center left 16px;
+  background-size: 16px 16px;
+  
 }
 .search-input {
   display: block;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 48px;
+  padding-right: 10px;
   width: 360px;
   border: none;
   background-color: transparent;
   border: 2px solid #000000;
   border-right: 1px solid #000;
   border-radius: 50px 0px 0px 50px;
+  box-sizing: border-box;
+  
 }
 .search-input {
   font-family: Rubik;
@@ -186,6 +198,10 @@ body {
   border-radius: 0px 50px 50px 0px;
   border-left: 1px solid #000;
   cursor: pointer;
+  padding: 10px 15px;
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .search-button:hover {
   background-color: #000000;
@@ -198,15 +214,9 @@ body {
 .search-button:active .search-button-text {
   opacity: 0.3;
 }
-
-/* фокус не такой как в макете */
-
-.search:focus .search-button {
+.search-button:focus {
   outline: 2px solid #af4fff;
 }
-
-/* --------------------- */
-
 .search-button:disabled {
   opacity: 0.3;
 }
@@ -297,13 +307,11 @@ body {
 .navigation-list {
   position: relative;
 }
-
 .navigation-list-inner {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .navigation-list-inner:not(:last-child) {
   margin-right: 60px;
 }
@@ -338,7 +346,7 @@ body {
   display: none;
 }
 .navigation-item-link:first-child:hover + .navigation-inner-wrapper {
-  display: block;
+  display: flex;
 }
 
 /* slider */
@@ -360,7 +368,6 @@ body {
   margin-left: auto;
   margin-right: 60px;
 }
-
 .slider-list {
   margin: 0;
   padding: 0;
@@ -379,6 +386,7 @@ body {
 }
 .slider-wrapper {
   min-width: 560px;
+
 }
 .arrow-left {
   position: absolute;
@@ -431,10 +439,12 @@ body {
 .slider-title {
   margin: 0;
   margin-bottom: 30px;
+  max-height: 100px;
 }
 .slider-text {
   margin: 0;
   margin-bottom: 60px;
+  max-height: 100px;
 }
 .slider-button-wrapper {
   display: flex;
@@ -478,13 +488,10 @@ body {
   background: #000000;
   opacity: 1;
 }
-
-/* не работает фокус */
-
-.slider-pagination-item:focus {
-  border: 2px solid #af4fff;
+.slider-pagination-button:focus {
+  border: none;
+  outline: 2px solid #af4fff;
 }
-/* -------------------- */
 .specifications-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -615,11 +622,8 @@ body {
   padding: 0;
   list-style-type: none;
   max-width: 875px;
-  max-height: 319px;
+  
   border-left: 7px solid #000000;
-}
-.description-item {
-  display: none;
 }
 .description-text-wrapper {
   width: 448px;
@@ -632,7 +636,7 @@ body {
 .description-text {
   margin: 0;
 }
-.description-item:target {
+.description-item {
   display: flex;
   justify-content: space-between;
   padding-left: 116px;
@@ -800,6 +804,9 @@ body {
   color: #444444;
   opacity: 0.5;
 }
+.subscribe-field:focus {
+  outline: 2px solid #af4fff;
+}
 .subscribe-button {
   padding: 18px 39px;
   border: 3px solid #cecece;
@@ -810,6 +817,9 @@ body {
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
+}
+.subscribe-button:focus {
+  outline: 2px solid #af4fff;
 }
 .subscribe-mail {
   width: 810px;
@@ -950,17 +960,20 @@ body {
   right: -40px;
 }
 .catalog-filter-label {
+  position: relative;
+  left: 15px;
   display: flex;
   margin-top: 7px;
   opacity: 0.3;
   min-width: 30px;
+  max-width: 70px;
 }
 .range-input {
   min-width: 46px;
   max-width: 50px;
   padding: 0 2px;
   font: inherit;
-  text-align: center;
+  text-align: left;
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -1052,12 +1065,22 @@ body {
 .sorting-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+.sorting-title {
+  max-width: 250px;
+  
 }
 .select-control {
+  font-size: 18px;
+  line-height: 30px;
   border: none;
   background-color: transparent;
   padding-right: 30px;
-  height: 30px;
+  
+  max-width: 300px;
+  min-height: 30px;
   align-self: center;
 }
 .select-control:focus {
@@ -1120,6 +1143,7 @@ body {
 .product-card-title {
   min-width: 195px;
   margin: 0;
+  margin-right: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1130,7 +1154,6 @@ body {
   line-height: 21px;
   color: #444444;
 }
-
 .product-card-item {
   position: relative;
 }
@@ -1145,16 +1168,12 @@ body {
 .product-card-link:active .rectangle-link::before {
   background: #ffc700;
 }
-
-/* не работает фокус */
-
 .product-card-link:focus {
   outline: 2px solid #af4fff;
 }
-
-/* -------------------- */
-
 .product-card-link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: #000000;
 }
@@ -1211,7 +1230,9 @@ body {
   margin: auto;
   list-style-type: none;
 }
-
+.pagination-item {
+  max-width: 200px;
+}
 .pagination-link {
   text-decoration: none;
   color: #000000;
@@ -1239,6 +1260,7 @@ body {
 .pagination-counter-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 200px;
   margin: 0;
   padding: 0;
@@ -1279,12 +1301,14 @@ body {
 
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
+  
 }
 .address {
   margin-top: 62px;
   margin-bottom: 77px;
-  width: 234px;
+  margin-right: 115px;
+  width: 236px;
+  
 }
 .footer-logo-link:hover {
   opacity: 0.6;
@@ -1308,7 +1332,8 @@ body {
 .footer-navigation {
   margin-top: 137px;
   margin-bottom: 62px;
-  width: 444px;
+  min-width: 444px;
+  max-width: 500px;
 }
 .footer-navigation-list {
   display: flex;
@@ -1330,6 +1355,8 @@ body {
 .footer-navigation-link {
   color: #ffffff;
   text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 .footer-navigation-link:hover {
   color: #ffc700;
@@ -1373,14 +1400,15 @@ body {
 .footer-contacts {
   display: flex;
   flex-direction: column;
-
   margin-top: 140px;
   margin-bottom: 65px;
+  margin-left: 190px;
 }
 .contacts-phone {
   display: flex;
   margin: 0;
-  height: 20px;
+  min-height: 20px;
+  max-width: 200px;
 }
 .contacts-link {
   font-style: normal;
