@@ -32,7 +32,12 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-item-link" href="#">каталог товаров</a>
+              <a class="navigation-item-link" href="#"><span class="navigation-link-title">каталог товаров</span>
+                <div class="navigation-toggle">
+                  <div class="navigation-toggle-plus"></div>
+                  <div class="navigation-toggle-plus"></div>
+               </div>
+              </a>
               <div class="navigation-inner-wrapper container">
                 <ul class="navigation-list-inner">
                   <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Виртуальная реальность</a></li>
@@ -47,6 +52,7 @@
                   <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Квадрокоптеры</a></li>
                 </ul>
               </div>
+              
             </li>
             <li class="navigation-item">
               <a class="navigation-item-link" href="#">доставка</a>
@@ -85,34 +91,35 @@
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="slider-button-wrapper">
                 <div class="button-pagination-wrapper">
-                <ol class="slider-pagination-list">
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button button-black" type="button">
-                      <span class="visually-hidden">1 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 фото</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 фото</span>
-                    </button>
-                  </li>
-                </ol>
+                  <ol class="slider-pagination-list">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button button-black" type="button">
+                        <span class="visually-hidden">1 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 фото</span>
+                      </button>
+                    </li>
+                  </ol>
               </div>
-                  <div class="rectangle-button">
-                        <a class="rectangle-link" href="#">подробнее</a>
-                  </div>
-                <dl class="specifications-list">
-                  <dt class="action">Дальность полета</dt>
-                  <dd class="distance">800 м</dd> 
-                  <dt class="action">Радиус поражения</dt>
-                  <dd class="distance">50 м</dd>
-                </dl>
-         </div>
+              <div class="rectangle-button slider-button">
+                    <a class="rectangle-link slider-link" href="#">подробнее</a>
+              </div>
+            </div>
+            <dl class="specifications-list">
+              <dt class="action">Дальность полета</dt>
+              <dd class="distance">800 м</dd> 
+              <dt class="action">Радиус поражения</dt>
+              <dd class="distance">50 м</dd>
+            </dl>
+         
       </div>
     </div>
         </li>
@@ -215,7 +222,7 @@
                 <div class="categories-image-wrapper">
                  <img class="categories-image"  src="images/categories/Vector-1.svg" width="85" height="117">
                </div>
-               <p class="categories-text">Моноподы для селфи</p>
+               <p class="categories-text">Моноподы<br> для селфи</p>
             </a>
            </li>
            <li class="categories-item">
@@ -442,7 +449,7 @@
                   </label>  
                   <label class="form-group">
                     <span class="sup-title">Ваш e-mail:</span>
-                    <input class="form-input width-name img-email" type="email" name="your-e-mail" placeholder="почта">
+                    <input class="form-input width-name img-email error" type="email" name="your-e-mail" placeholder="почта">
                     <span class="sub-title">Введите ваш e-mail</span>
                   </label>
                </div>
@@ -459,7 +466,7 @@
                         к провозу багажа.</span>
                     </span>
                     <label class="form-group form-number"><span class="sup-title">Количество:</span>
-                      <input class="form-input modal-number" type="text" placeholder="1">
+                      <input class="form-input modal-number" type="number" placeholder="1">
                       <button class="minus modal-number-button">
                       <span class="visually-hidden">Меньше</span>
                       </button>
