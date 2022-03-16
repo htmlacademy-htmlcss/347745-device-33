@@ -34,7 +34,12 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item-link" href="#">каталог товаров</a>
+            <a class="navigation-item-link" href="#"><span class="navigation-link-title">каталог товаров</span>
+              <div class="navigation-toggle">
+                <div class="navigation-toggle-plus"></div>
+                <div class="navigation-toggle-plus"></div>
+             </div>
+            </a>
             <div class="navigation-inner-wrapper container">
               <ul class="navigation-list-inner">
                 <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Виртуальная реальность</a></li>
@@ -49,6 +54,7 @@
                 <li class="navigation-item-inner"><a class="navigation-link-inner" href="#">Квадрокоптеры</a></li>
               </ul>
             </div>
+            
           </li>
           <li class="navigation-item">
             <a class="navigation-item-link" href="#">доставка</a>
@@ -92,14 +98,14 @@
                               
                             <button class="range-toggle"><span class="visually-hidden">Изменить минимальную цену</span>
                             </button>
-                            <label class="catalog-filter-label">
+                            <label class="catalog-filter-label min-cost">
                               от <input class="range-input" type="number" value="0" name="min-price"> 
                             </label>
                           </div>
                           <div class="range-toggle-wrapper toggle-max">
                             <button class="range-toggle"><span class="visually-hidden">Изменить максимальную цену</span>
                             </button>
-                            <label class="catalog-filter-label">
+                            <label class="catalog-filter-label max-cost">
                             до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
                             </label>
                           </div>
@@ -292,7 +298,7 @@
       <section class="address">
         <h2 class="visually-hidden">наш адрес</h2>
         <a class="footer-logo-link"  href="index.html">
-          <img class="logo" src="images/footer/logo-footer.svg" width="115" height="36" alt="Логотип Девайс">
+          <img class="logo" src="images/footer/logo-footer.svg" width="150" height="36" alt="Логотип Девайс">
         </a>
           <address class="footer-address">
             <p class="footer-address-text">Санкт-Петербург, набережная
