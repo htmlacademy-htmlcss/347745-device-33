@@ -16,18 +16,21 @@
       <div class="search-menu">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="search">
-            <input class="search-input" type="text" name="search" placeholder="Текст поиска">
+            <input class="search-input loupe" type="text" name="search" placeholder="Текст поиска" required="text">
           </label>
           <button class="search-button" type="submit"><span class="search-button-text">Найти</span></button>
         </form>
         <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-item-link  login" href="#">Войти</a>
+          <li class="menu-item cock">
+            <a class="menu-item-link  login" href="#">Коля Петухов</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item cock">
+            <a class="menu-item-link inactive" href="#">Войти</a>
+          </li>
+          <li class="menu-item cock">
             <a class="menu-item-link compare" href="#">Сравнить</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item cock">
             <a class="menu-item-link card" href="#">Корзина</a>
           </li>
         </ul>
@@ -203,16 +206,16 @@
             </select>
             <ul class="button-control-list">
               <li class="button-control-item">
-                <a class="button-control-link" href="#">
+                <button class="button-control-link" type="button">
                   <span class="visually-hidden">выше</span>
                   <svg class="control-icon" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m6 0 5.5 10H.5" fill="#000"/></svg>
-                </a>
+                </button>
               </li>
               <li class="button-control-item">
-                <a class="button-control-link" href="#">
+                <button class="button-control-link" type="button">
                   <span class="visually-hidden">ниже</span>
                   <svg class="control-icon" width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10 .5 0h11" fill="#000"/></svg>
-                </a>
+                </button>
               </li>
             </ul>
           </div> 

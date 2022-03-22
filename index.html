@@ -14,14 +14,14 @@
       <div class="search-menu">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="search">
-            <input class="search-input" type="text" name="search" placeholder="Текст поиска">
+            <input class="search-input  loupe" type="text" name="search" placeholder="Текст поиска" required="text">
           </label>
           <button class="search-button" type="submit">
             <span class="search-button-text">Найти</span>
           </button>
         </form>
         <ul class="menu-list">
-          <li class="menu-item">
+          <li class="menu-item enter">
             <a class="menu-item-link  login" href="#">Войти</a>
           </li>
           <li class="menu-item">
@@ -307,15 +307,15 @@
           <h2 class="visually-hidden">условия</h2>
           <ol class="conditions-nav-list">
             <li class="conditions-nav-item rectangle-button">
-              <a class="conditions-nav-link" href="#tab_01" id="tab-1">
+              <button class="conditions-nav-link" type="button" id="tab-1">
                 <span class="conditions-text">Доставка</span>
-              </a>
+              </button>
             </li>
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link conditions-nav-link" href="#tab_02" id="tab-2">Гарантия</a>
+              <button class="rectangle-link conditions-nav-link" type="button" id="tab-2">Гарантия</button>
             </li>
             <li class="conditions-nav-item rectangle-button">
-              <a class="rectangle-link conditions-nav-link" href="#tab_03" id="tab-3">Кредит</a>
+              <button class="rectangle-link conditions-nav-link" type="button" id="tab-3">Кредит</button>
             </li>
           </ol>
           <ul class="conditions-description-list ">
@@ -326,9 +326,6 @@
                 к вашему подъезду совершенно бесплатно! Ведь
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
-              <div class="description-image-wrapper">
-                <img class="description-image" src="images/tabs/tab-image.svg" width="136" height="164" alt="почтальон несет посылку">
-              </div>
             </li>
             <li class="description-item description-hidden" id="tab_02" aria-labelledby="tab-2">
               <div class="description-text-wrapper">
@@ -337,17 +334,11 @@
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
               </div>
-              <div class="description-image-wrapper">
-                <img class="description-image" src="images/tabs/tab-image2.svg" width="171" height="195" alt="телефоная тубка, гаечный ключ и отвертка">
-              </div>
             </li>
             <li class="description-item description-hidden" id="tab_03" aria-labelledby="tab-3">
               <div class="description-text-wrapper">
                 <h3 class="description-title title">Кредит</h3>
                 <p class="description-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-              </div>
-              <div class="description-image-wrapper">
-                <img class="description-image" src="images/tabs/tab-image3.svg" width="148" height="180" alt="человек несет банковскую карту">
               </div>
             </li>
           </ul>
